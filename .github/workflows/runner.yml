@@ -18,4 +18,4 @@ jobs:
           path: hello/
           username: ${{ secrets.MY_DOCKER_USERNAME }}
           password: ${{ secrets.MY_DOCKER_PASSWORD }}
-          repository: ywlee/myflask
+          repository: ywlee/myflask:${{ github.run_id }}
