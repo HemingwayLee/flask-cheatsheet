@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.MY_DOCKER_USERNAME }}
           password: ${{ secrets.MY_DOCKER_PASSWORD }}
           repository: ywlee/myflask
-          # tags: ${{ github.run_id }}
-          tags: test
+          tags: ${{ github.run_id }}
+          # tags: test
