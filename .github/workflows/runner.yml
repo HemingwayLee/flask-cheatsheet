@@ -15,7 +15,7 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          path: docker/basic/arg/
+          path: hello/
           username: ${{ secrets.MY_DOCKER_USERNAME }}
           password: ${{ secrets.MY_DOCKER_PASSWORD }}
           repository: ywlee/myflask
