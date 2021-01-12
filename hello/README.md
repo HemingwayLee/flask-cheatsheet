@@ -8,6 +8,13 @@ export FLASK_APP=hello.py && flask run
 ```
 docker build -t myflask .
 docker run -it --rm -p5051:5000 myflask
+docker run -d --rm -p5051:5000 myflask
+```
+
+## Clean up
+```
+docker stop ${container_id}
+docker rm ${container_id}
 ```
 
 ## Run it by dockercompose
@@ -19,6 +26,6 @@ docker-compose down
 
 # Get into running docker
 ```
-docker exec -it {container id} /bin/bash
+docker exec -it ${container_id} /bin/bash
 ```
 
