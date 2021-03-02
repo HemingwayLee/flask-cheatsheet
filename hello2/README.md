@@ -1,7 +1,7 @@
 # How to run
 ## Run it locally
 ```
-export FLASK_APP=hello.py && flask run
+python3 hello2.py
 ```
 
 ## Run it by docker
