@@ -1,4 +1,5 @@
 import os
+import requests
 from flask import Flask
 app = Flask(__name__)
 
@@ -19,6 +20,19 @@ def get_all_api(apiname):
     print(endpoints)
     if apiname in endpoints:
         return 'Yes'
+    else:
+        return 'No'
+
+@app.route('/call/<apiname>')
+def call_all_api(apiname):
+    rules = []
+    for rule in app.url_map.iter_rules():
+        rules.append(str(rule))
+
+    print(rules)
+    if "/" + apiname in rules:
+        resp = requests.get(url=f"http://0.0.0.0:5000/{apiname}")
+        return (resp.text, resp.status_code, resp.headers.items())
     else:
         return 'No'
 
