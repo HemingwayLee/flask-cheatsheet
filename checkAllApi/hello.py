@@ -12,11 +12,15 @@ def hola_world():
 
 @app.route('/all/<apiname>')
 def get_all_api(apiname):
+    endpoints = []
     for rule in app.url_map.iter_rules():
-        if apiname in rule.endpoint:
-            return 'Yes'
-        else:
-            return 'No'
+        endpoints.append(rule.endpoint)
+
+    print(endpoints)
+    if apiname in endpoints:
+        return 'Yes'
+    else:
+        return 'No'
 
 if __name__ == '__main__':
     app.run('0.0.0.0', 5000, threaded=True)
