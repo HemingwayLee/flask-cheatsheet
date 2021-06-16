@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  myredis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+  celeryflower:
+    build: .
+    command: /home/app/script.sh
+    environment:
+      PYTHONUNBUFFERED: 1
+    ports:
+      - "5555:5555"
+    depends_on:
+      - myredis
