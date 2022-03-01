@@ -9,10 +9,12 @@
 | ORM | SQLAlchemy or (Flask-SQLAlchemy) is needed | build-in ORM (default is sqlite) |
 | Frontend Template Engine |  | build-in Template Engine |
 
+# Database
 ## Flask-SQLAlchemy
 * [Flask-SQLAlchemy vs SQLAlchemy](https://stackoverflow.com/questions/14343740/flask-sqlalchemy-or-sqlalchemy)
-  * Flask-SQLAlchemy creates an additional layer you don't really need
+  * Flask-SQLAlchemy creates an additional layer you might not really need
   * Flask-SQLAlchemy has much smaller community than SQLAlchemy itself
+* It officially supports `mysql`, `sqlite`, `postgresql`, `oracle` (Django officially support `mariadb`)
 
 # Ref
 ## flask
