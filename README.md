@@ -10,8 +10,9 @@
 | Frontend Template Engine |  | build-in Template Engine |
 
 ## Flask-SQLAlchemy
-* Flask-SQLAlchemy creates an additional layer you don't really need
-* Flask-SQLAlchemy has much smaller community than SQLAlchemy itself
+* [Flask-SQLAlchemy vs SQLAlchemy](https://stackoverflow.com/questions/14343740/flask-sqlalchemy-or-sqlalchemy)
+  * Flask-SQLAlchemy creates an additional layer you don't really need
+  * Flask-SQLAlchemy has much smaller community than SQLAlchemy itself
 
 # Ref
 ## flask
