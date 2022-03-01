@@ -7,7 +7,7 @@
 | Difficulties | Easy to use | Higher learning curve |
 | Best part | lightweight | built-in authentication system |
 | ORM | SQLAlchemy or (Flask-SQLAlchemy) is needed | build-in ORM (default is sqlite) |
-| Frontend Template Engine |  | build-in Template Engine |
+| Frontend Template Engine | Jinja2 (derived from DTL) | Django Template Language (DTL) |
 
 # Database
 ## Flask-SQLAlchemy
