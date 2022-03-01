@@ -3,6 +3,7 @@
 ## Comparison
 | Framework | Flask | Django |
 | --- | --- | --- |
+| Type of Framework | WSGI | Fullstack |
 | Difficulties | Easy to use | Higher learning curve |
 | Best part | lightweight | built-in authentication system |
 | ORM |  | build-in ORM |
