@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 from youtube_transcript_api import YouTubeTranscriptApi
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 ytt_api = YouTubeTranscriptApi()
 
 @app.route('/')
